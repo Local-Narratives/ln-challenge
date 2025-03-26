@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Local Narratives Challenge
 
-## Getting Started
+Welcome! This is a challenge to help us get to know how you think, build, and solve real-world problems using code.
 
-First, run the development server:
+## 🧠 Prompt
+You're given some data files in  `src/components/experiencesData/` folder that contains details of travel experiences across different states in India.
 
+Your goal is to build a mini frontend app using this data.
+
+### 1️⃣ Explore All Experiences Page
+
+Create a page that displays **all experiences on one page**.
+
+#### Features to include:
+- A **Filter** button at the top that filters experiences by:
+  - `State`
+  - `Best Time to Visit`
+
+- A **Sort** button to sort the results by:
+  - `Price`
+  - `Month` (based on the **starting month** in `Best Time to Visit`)
+
+- A **Search Bar** that allows searching by:
+  - `Experience Name`
+  - `Keywords` (partial match)
+    
+- All Filters and Sort results should be **combinable** and update results in real-time (no page refresh).
+
+- When a user clicks an experience card:
+  - Redirect to the relevant `metaDesc.url` from the Local Narratives website (if available), **or**
+  - Keep the card unclickable with a tooltip like “Coming Soon”
+
+✅ **(Optional) Make it mobile-friendly and responsive**
+
+---
+
+### 2️⃣  Add a New Experience
+
+Create a form that lets you add a new experience.
+
+#### Fields:
+- `Name`
+- `State`
+- `Best Time to Visit`
+- `Description`
+- `Tags` (comma-separated if any)
+- `Price`
+- `Host Details`
+- `Capacity`
+- `Duration`
+
+On submission, update the experience list **on the same page** (locally).
+(no need to persist — update in memory is fine). 
+
+---
+
+## 🚀 Getting Started
+This is a basic Next code template
+Clone this repo, install dependencies, and run:
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Start building on top of this started repo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 What to Submit
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- A Pull Request with your code to this repo
+- *(Optional)* A short video walkthrough explaining what you have worked on
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thanks for being creative and exploring the world of Local Narratives with us! Look forward to working with you 🌿
